@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" fill="none">
+  <!-- Crescent eye mark -->
+  <g transform="translate(10, 10)">
+    <!-- Crescent (月牙) - the eye shape -->
+    <path d="M 8 42 Q 40 74 72 42 Q 40 56 8 42 Z" stroke="#8E49FA" stroke-width="2.5" fill="none"/>
+    <!-- Pupil -->
+    <circle cx="40" cy="54" r="3.5" fill="#8E49FA"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(96, 14)">
+    <text x="0" y="36" fill="#FFFFFF" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">Faireye</text>
+    <text x="0" y="66" fill="#8E49FA" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="-0.3">Semi</text>
+    <text x="0" y="82" fill="#525252" font-family="'Noto Sans SC','PingFang SC',sans-serif" font-size="11" font-weight="500" letter-spacing="6">灵瞳半导体</text>
+  </g>
+</svg>

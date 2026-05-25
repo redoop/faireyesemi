@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵瞳半导体 Faireye Semi — 车规级 RISC-V AI 芯片设计</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Faireye Semi — 总部位于深圳，专注于车规级 RISC-V AI 加速器芯片设计，为智能汽车、工业物联网、边缘计算提供高能效 AI 解决方案。">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <img src="docs/logo.png" alt="Faireye Semi" class="logo-icon">
+                <span class="logo-text">
+                    <span class="logo-en">Faireye <span class="logo-highlight">Semi</span></span>
+                    <span class="logo-cn">灵瞳半导体</span>
+                </span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#chip">芯片产品</a></li>
+                <li><a href="#advantages">核心技术</a></li>
+                <li><a href="#applications">应用场景</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">灵瞳半导体 · 车规级 RISC-V AI 芯片</div>
+                <h1>为边缘智能<br><span class="highlight">注入芯力量</span></h1>
+                <p>灵瞳半导体（Faireye Semi）专注车规级 RISC-V AI 加速器芯片的研发与设计，品牌致敬半导体产业摇篮——仙童半导体，以 BitNet 无乘法器架构创新，开创高能效边缘 AI 芯片新纪元。</p>
+                <div class="hero-actions">
+                    <a href="#chip" class="btn btn-primary">探索芯片 →</a>
+                    <a href="#about" class="btn btn-outline">了解更多</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-visual-inner">
+                    <div class="wafer-large"></div>
+                    <div class="wafer-medium"></div>
+                    <div class="wafer-grid">
+                        <div class="wafer-grid-line h"></div>
+                        <div class="wafer-grid-line h"></div>
+                        <div class="wafer-grid-line v"></div>
+                        <div class="wafer-grid-line v"></div>
+                    </div>
+                    <div class="wafer-core"></div>
+                    <div class="wafer-dot"></div>
+                    <div class="hero-tag hero-tag-1">BitNet Architecture</div>
+                    <div class="hero-tag hero-tag-2">AEC-Q100</div>
+                    <div class="hero-tag hero-tag-3">&lt; 100mW</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About</span>
+                <h2>关于 <span class="accent">Faireye Semi</span></h2>
+                <p>品牌名致敬半导体产业摇篮——仙童半导体（Fairchild Semiconductor），以"Eye"（慧眼）洞察 AI 趋势，致力成为全球领先的车规级 AI 芯片设计公司。</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-hero">
+                    <h3>半导体产业的<br>新一代<em class="accent"> 芯力量</em></h3>
+                    <p>品牌致敬仙童半导体（Fairchild Semiconductor），继承其创新基因。以"Eye"（慧眼）洞察 AI 趋势，专注车规级 RISC-V AI 加速器芯片。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🚗</div>
+                    <h3>车规级芯片</h3>
+                    <p>严格遵循 AEC-Q100 可靠性标准，确保每一颗芯片满足汽车级严苛要求。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">⚡</div>
+                    <h3>BitNet 架构</h3>
+                    <p>全球领先的 BitNet 无乘法器 AI 加速架构，能效比远超传统方案。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CHIP PRODUCT ===== -->
+    <section id="chip">
+        <div class="section-header" style="padding-top:120px;text-align:center">
+            <div class="container">
+                <span class="section-tag">Chip</span>
+                <h2>SimpleEdgeAiSoC <span class="accent">车规级 AI 加速器</span></h2>
+                <p style="margin:12px auto 0">基于 RISC-V 架构，集成 BitNet 创新技术，面向智能汽车与边缘计算的旗舰级芯片。</p>
+            </div>
+        </div>
+
+        <!-- Product split -->
+        <div class="product-split">
+            <div class="product-showcase">
+                <span class="tag">已具备流片条件</span>
+                <h3>SimpleEdge<br>AiSoC</h3>
+                <p class="sub">55nm · RV32 · BitNet™ 无乘法器 AI 加速</p>
+                <ul class="product-specs">
+                    <li>PicoRV32 内核 @ 50MHz</li>
+                    <li>CompactAccel 8×8 矩阵加速 · 1.6 GOPS</li>
+                    <li>SRAM 256KB · SPI / I²C / UART / GPIO</li>
+                    <li>通过 DRC / LVS 物理验证</li>
+                </ul>
+            </div>
+            <div class="product-chip">
+                <div class="product-chip-bg"></div>
+                <svg class="product-chip-svg" viewBox="0 0 200 200" fill="none">
+                    <rect x="30" y="30" width="140" height="140" rx="14" stroke="#8E49FA" stroke-width="2" fill="none"/>
+                    <rect x="55" y="55" width="90" height="90" rx="8" stroke="#8E49FA" stroke-width="1.2" fill="none" opacity="0.5"/>
+                    <circle cx="100" cy="100" r="25" fill="rgba(142,73,250,.06)"/>
+                    <circle cx="100" cy="100" r="8" fill="rgba(142,73,250,.3)"/>
+                    <line x1="100" y1="30" x2="100" y2="10" stroke="#8E49FA" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="100" y1="170" x2="100" y2="190" stroke="#8E49FA" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="30" y1="100" x2="10" y2="100" stroke="#8E49FA" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="170" y1="100" x2="190" y2="100" stroke="#8E49FA" stroke-width="1.5" stroke-linecap="round"/>
+                    <text x="100" y="103" fill="#8E49FA" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">RV32</text>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Stats bar -->
+        <div class="stats-bar">
+            <div class="stat-block">
+                <span class="stat-num">10×</span>
+                <div class="stat-label">内存压缩</div>
+            </div>
+            <div class="stat-block">
+                <span class="stat-num">60%</span>
+                <div class="stat-label">功耗降低</div>
+            </div>
+            <div class="stat-block">
+                <span class="stat-num">1.6</span>
+                <div class="stat-label">GOPS 算力</div>
+            </div>
+            <div class="stat-block">
+                <span class="stat-num">55</span>
+                <div class="stat-label">nm 制程</div>
+            </div>
+        </div>
+
+        <!-- Architecture + Specs -->
+        <div class="section container">
+            <div class="section-header">
+                <span class="section-tag">Architecture</span>
+                <h2>芯片架构 <span class="accent">总览</span></h2>
+            </div>
+            <div class="arch-diagram">
+                <div class="arch-block arch-cpu">
+                    <div class="arch-block-title">PicoRV32 核心</div>
+                    <div class="arch-block-detail">RV32I 精简指令集 @ 50MHz</div>
+                </div>
+                <div class="arch-conn">系统总线</div>
+                <div class="arch-block-group">
+                    <div class="arch-block arch-accel">
+                        <div class="arch-block-title">CompactAccel</div>
+                        <div class="arch-block-detail">8×8 矩阵加速 · 1.6 GOPS</div>
+                    </div>
+                    <div class="arch-block arch-bignet">
+                        <div class="arch-block-title">BitNet 加速器</div>
+                        <div class="arch-block-detail">无乘法器推理 · 能效提升 60%</div>
+                    </div>
+                </div>
+                <div class="arch-conn">片上外设</div>
+                <div class="arch-periph">
+                    <span>SPI</span><span>I²C</span><span>UART</span><span>GPIO</span><span>Timer</span><span>SRAM 256KB</span>
+                </div>
+            </div>
+
+            <div style="margin-top:80px">
+                <h3 style="text-align:center;font-size:1.4rem;font-weight:700;margin-bottom:32px">关键规格</h3>
+                <div class="specs-grid">
+                    <div class="spec-item spec-highlight"><span class="spec-label">制程</span><span class="spec-value">55nm</span></div>
+                    <div class="spec-item spec-highlight"><span class="spec-label">频率</span><span class="spec-value">50 MHz</span></div>
+                    <div class="spec-item spec-highlight"><span class="spec-label">AI 算力</span><span class="spec-value">1.6 GOPS</span></div>
+                    <div class="spec-item"><span class="spec-label">功耗</span><span class="spec-value">&lt; 100 mW</span></div>
+                    <div class="spec-item"><span class="spec-label">温度</span><span class="spec-value">-40°C ~ 125°C</span></div>
+                    <div class="spec-item"><span class="spec-label">安全</span><span class="spec-value">AEC-Q100</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TECHNOLOGY ADVANTAGES ===== -->
+    <section class="section" id="advantages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technology</span>
+                <h2>核心 <span class="accent">技术优势</span></h2>
+                <p>从底层架构到全流程设计验证，构筑芯片竞争力的每一环。</p>
+            </div>
+            <div class="adv-grid">
+                <div class="adv-item">
+                    <div class="adv-num">01</div>
+                    <div>
+                        <h4>敏捷硬件开发</h4>
+                        <p>基于 Chisel 3.x 高级硬件描述语言，利用 Scala 参数化建模，显著提升设计效率与可维护性。</p>
+                    </div>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-num">02</div>
+                    <div>
+                        <h4>开源 EDA 全流程</h4>
+                        <p>支持 Yosys 综合、OpenROAD 布局布线及 ICS55 开源 PDK，实现芯片设计全流程自主可控。</p>
+                    </div>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-num">03</div>
+                    <div>
+                        <h4>车规级质量管控</h4>
+                        <p>严格遵循 IATF 16949 质量管理体系与 AEC-Q100 可靠性标准，确保车规级品质。</p>
+                    </div>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-num">04</div>
+                    <div>
+                        <h4>全流程仿真验证</h4>
+                        <p>集成 ChiselTest 单元测试与 Verilator 系统级仿真，95% 验证覆盖率，通过 DRC / LVS 检查。</p>
+                    </div>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-num">05</div>
+                    <div>
+                        <h4>OpenHarmony 适配</h4>
+                        <p>提供标准化寄存器映射接口，支持 OpenHarmony HDF 驱动框架快速接入，软硬件协同优化。</p>
+                    </div>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-num">06</div>
+                    <div>
+                        <h4>超低功耗设计</h4>
+                        <p>目标功耗 &lt; 100mW，静态功耗仅 644.5 µW，完美适配电池供电的边缘与车载场景。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== APPLICATIONS ===== -->
+    <section class="section" id="applications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Scenarios</span>
+                <h2>应用 <span class="accent">场景</span></h2>
+                <p>覆盖智慧出行、工业物联与智能终端三大领域的高能效 AI 解决方案。</p>
+            </div>
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-icon">🚗</div>
+                    <h3>智能座舱与车载感知</h3>
+                    <p>车载语音唤醒、驾驶员状态监测（DMS）、手势识别等车辆边缘 AI 推理场景，满足车规级安全与可靠性要求。</p>
+                    <ul class="app-features">
+                        <li>离线语音指令识别</li>
+                        <li>驾驶员疲劳检测</li>
+                        <li>座舱自适应控制</li>
+                    </ul>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🏭</div>
+                    <h3>工业物联网 (IIoT)</h3>
+                    <p>部署于车载边缘传感器节点，实时处理振动分析、异常预警等任务，降低数据上传带宽与云端依赖。</p>
+                    <ul class="app-features">
+                        <li>设备状态实时监测</li>
+                        <li>振动频谱分析</li>
+                        <li>预测性维护</li>
+                    </ul>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">⌚</div>
+                    <h3>可穿戴与健康监测</h3>
+                    <p>借助 &lt; 100mW 超低功耗特性，在小电池容量下持续运行运动检测、心率分析等 AI 算法。</p>
+                    <ul class="app-features">
+                        <li>运动模式识别</li>
+                        <li>心率异常检测</li>
+                        <li>长时间续航 AI 处理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+        <div class="container cta-inner">
+            <h2>与 Faireye Semi 共创车规 AI 芯未来</h2>
+            <p>我们为车载及边缘 AI 应用提供芯片选型、定制设计与技术咨询一站式服务。</p>
+            <a href="#contact" class="btn btn-primary btn-lg">联系我们 →</a>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>联系 <span class="accent">我们</span></h2>
+                <p>期待与您探讨合作机会。</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-emoji">📍</span>
+                        <div>
+                            <strong>公司地址</strong>
+                            <p>深圳市南山区粤海街道科技中二路<br>软件园 13 栋 601 室</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-emoji">📧</span>
+                        <div>
+                            <strong>电子邮箱</strong>
+                            <p><a href="mailto:info@faireyesemi.com">info@faireyesemi.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-emoji">📞</span>
+                        <div>
+                            <strong>联系电话</strong>
+                            <p><a href="tel:+8618613807209">+86 186 1380 7209</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-emoji">🔗</span>
+                        <div>
+                            <strong>开源项目</strong>
+                            <p><a href="https://github.com/redoop/riscv-ai-accelerator" target="_blank" rel="noopener">github.com/redoop/riscv-ai-accelerator</a></p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="电子邮箱" required>
+                    <input type="text" placeholder="公司名称">
+                    <textarea rows="4" placeholder="请描述您的需求 ..." required></textarea>
+                    <button type="submit" class="btn btn-primary">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">Faireye <span class="logo-highlight">Semi</span></span>
+                <p>芯视界 · 智未来</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>产品</h5>
+                    <a href="#chip">SimpleEdgeAiSoC</a>
+                    <a href="#advantages">BitNet 技术</a>
+                    <a href="#applications">应用场景</a>
+                    <a href="#">样品申请</a>
+                </div>
+                <div class="footer-col">
+                    <h5>资源</h5>
+                    <a href="https://github.com/redoop/riscv-ai-accelerator" target="_blank" rel="noopener">GitHub 开源</a>
+                    <a href="https://redoop.github.io/riscv-ai-accelerator/" target="_blank" rel="noopener">芯片文档</a>
+                    <a href="#">技术白皮书</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-col">
+                    <h5>公司</h5>
+                    <a href="#about">关于我们</a>
+                    <a href="#">新闻动态</a>
+                    <a href="#">加入我们</a>
+                    <a href="#">隐私政策</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Faireye Semi. All rights reserved. | 粤ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
